@@ -1,0 +1,17 @@
+{
+  "name": "ts-percent-encoding",
+  "version": "0.1.0",
+  "description": "Turns percent-encoded text back into readable form per RFC 3986.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
