@@ -64,3 +64,10 @@ in UTF-8 decoding like any other ASCII character.
 - `decodeComponent(input, options?)` — same decoding rules, named for the case
   where the input is a single URI component.
 - `PercentEncodingError` — error class with `message` and `index` properties.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
